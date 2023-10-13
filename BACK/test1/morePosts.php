@@ -11,7 +11,8 @@
     $link = mysqli_connect($host, $user, $pass, $db);
     mysqli_query($link, "SET NAMES 'utf8'");
 
-    $query = "SELECT * FROM posts ORDER BY id DESC";
+    $i = $_GET['i'];
+    $query = "SELECT * FROM posts ORDER BY id DESC LIMIT $i, 4";
     $result = mysqli_query($link, $query) or die(mysqli_error($link));
     for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
     echo json_encode($data);

@@ -13,7 +13,7 @@
 
         $id = $_GET['id'];
     
-        $query = "UPDATE posts SET likes=likes+1 WHERE id=$id";
+        $query = "UPDATE posts SET likes=likes-1 WHERE id=$id";
         $result = mysqli_query($link, $query) or die(mysqli_error($link));
         // for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);
         // $data = mysqli_fetch_assoc($result);
