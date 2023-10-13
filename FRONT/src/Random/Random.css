@@ -1,0 +1,139 @@
+
+
+.main_create{
+    display: flex;
+    flex-direction: column;
+}
+
+.create_pers{
+    vertical-align: middle;
+    display: inline-block;
+    position: static;
+    width: 300px;
+    height: 33px;
+    border: 1px solid #5F5C52;
+    margin: auto;
+    margin-top: 30px;
+    background: linear-gradient(#fae1e1, rgb(250, 214, 224) , rgb(168, 246, 246));
+    box-shadow: 10px 5px 5px rgb(250, 214, 224);
+}
+
+.create_pers :hover{
+    transition: 1s;
+    background-color: #006AE2;
+}
+
+.main_random{   
+        width: 850px;
+        height: 500px;
+        margin: auto;
+        margin-top: 40px
+}
+
+.pers{
+    list-style: none;
+    margin: auto;
+    width: 150px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.main_items{
+    max-height: auto;
+    display: inline-block;
+    list-style: none;
+    width: 850px;
+    text-align: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.item{
+    display: inline-block;
+    margin: 10px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    
+
+    .main_create{
+        margin: auto !important;
+        width: auto !important; 
+        max-height: auto !important;
+        margin-bottom: 130px !important;
+}
+
+    .main_random{
+        width: auto !important;
+        margin: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        max-height: auto !important;
+}
+
+    .main_items{
+        width: auto !important;
+        margin: auto !important;
+    }
+
+    .item{
+        align-items: center !important;
+        margin: auto;
+        display: flex !important;
+        flex-direction: column !important;
+}
+    .create_pers{
+        margin: auto;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .main_create{
+        margin: auto !important;
+        width: auto !important; 
+        max-height: auto !important;
+        margin-bottom: 150px !important;
+}
+
+    .main_random{
+        width: auto !important;
+        margin: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        max-height: auto !important;
+}
+
+    .main_items{
+        width: auto !important;
+        margin: auto !important;
+}
+
+    .item{
+        align-items: center !important;
+        margin: auto;
+        display: flex !important;
+        flex-direction: column !important;
+}
+    .create_pers{
+        margin-top: 20px !important;
+        margin: auto;
+        display: flex !important;
+        flex-direction: column !important;
+}
+
+    .pers{
+        margin-top: 20px;
+}
+
+
+}

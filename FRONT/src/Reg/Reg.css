@@ -1,0 +1,50 @@
+
+
+.form{
+  margin: auto;
+  width: 710px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  background: linear-gradient(#fefefe, rgb(252, 221, 229) , rgb(200, 251, 251));
+  border-radius: 2px;
+  margin-top: 30px
+}
+
+.form__submit{
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 224px; 
+  height: 30px;
+}
+
+.form__input{
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 55px; 
+    width: 50%;
+    padding:5px;
+    border: 1px solid #e5e5e5;  
+    transition: border-color .15s linear;
+    border-radius: 70px;
+  } 
+        .form:invalid{
+          border-color: brown;  
+          
+        }
+      .form__input:valid{
+        border-color: rgb(68, 207, 68);
+      }
+    .form__input:invalid ~ .form__submit{
+        display: none;
+  }
+    .form:valid{
+    border-color: rgb(68, 207, 68);
+  }
+    .form__submit:hover{
+    border-color: rgb(68, 207, 68);
+  } 
+
+
+  
